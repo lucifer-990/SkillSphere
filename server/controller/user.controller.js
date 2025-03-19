@@ -3,7 +3,7 @@ import bcrypt from "bcryptjs";
 import { generateToken } from "../utils/generateToken.js";
 import { deleteMediaFromCloudinary, uploadMedia } from "../utils/cloudinary.js";
 
-// http://localhost:8080/api/v1/user/register  required fields: name, email, password
+// https://skillsphere-28j7.onrender.com/api/v1/user/register  required fields: name, email, password
 export const register = async (req, res) => {
   try {
     const { name, email, password, role } = req.body;
@@ -40,7 +40,7 @@ export const register = async (req, res) => {
   }
 };
 
-// http://localhost:8080/api/v1/user/login   required fields: email, password
+// https://skillsphere-28j7.onrender.com/api/v1/user/login   required fields: email, password
 export const login = async (req, res) => {
   try {
     const { email, password } = req.body;

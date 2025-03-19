@@ -1,7 +1,7 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 import { userLoggedin, userLoggedout } from "../authSlice";
 
-const userApi = "http://localhost:8080/api/v1/user/";
+const userApi = "https://skillsphere-28j7.onrender.com/api/v1/user/";
 
 export const authApi = createApi({
   reducerPath: "authApi",
